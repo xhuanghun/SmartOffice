@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.view.AutoScrollTextView
+        android:id="@+id/c_auto_textview"
+        android:layout_width="match_parent"
+        android:textSize="23sp"
+        android:paddingTop="10dp"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:layout_height="50dp"/>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.view.MyGridView
+            android:id="@+id/mygridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" />
+    </ScrollView>
+
+</LinearLayout>

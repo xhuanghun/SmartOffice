@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <!-- img->name->time->switch -->
+    <ImageView
+        android:id="@+id/item_light_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/light1_off" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/item_light_switch"
+        android:layout_toRightOf="@id/item_light_img"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_light_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#000000"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:text="灯名称"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/item_light_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:text="灯使用时间"
+            android:textSize="16dp" />
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/item_light_switch"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/light_bt_bg"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

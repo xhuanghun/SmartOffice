@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/QD_Head"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/head_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_empty"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/b_model_t1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="编号" />
+
+        <TextView
+            android:id="@+id/b_model_t2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="模式名称" />
+
+        <TextView
+            android:id="@+id/b_model_t4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="可控开关" />
+    </LinearLayout>
+
+    <!-- 特别注意！！！时间原因，这里没做成ListView。后期务必写成ListView支持性能 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_empty"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/b_model_id1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="模式一" />
+
+            <TextView
+                android:id="@+id/b_model_modelname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="一键全关模式" />
+
+            <Button
+                android:id="@+id/b_model_1_button"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/news_bg"
+                android:text="Click" />
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/b_model_id2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="模式二" />
+
+            <TextView
+                android:id="@+id/b_model_modelname2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="自动模式" />
+
+            <Button
+                android:id="@+id/b_model_2_button"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/news_bg"
+                android:text="Click" />
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/b_model_id3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="模式三" />
+
+            <TextView
+                android:id="@+id/b_model_modelname3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="正常模式" />
+
+            <Button
+                android:id="@+id/b_model_3_button"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/news_bg"
+                android:text="Click" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

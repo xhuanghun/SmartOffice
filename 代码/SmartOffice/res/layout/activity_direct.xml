@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#DBDFEC"
+    android:orientation="vertical" >
+    
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指令直接调试窗口"
+        android:textSize="20sp"
+        />
+    
+    <EditText 
+        android:id="@+id/input_et"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="code..."/>
+    <View 
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+    <Button 
+        android:id="@+id/send_bt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Send"/>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="141.8dp"
+    android:background="@drawable/gridview_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="10dp" >
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/grid_item_bg1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/first_bg"
+            android:paddingTop="20dp" />
+
+        <ImageView
+            android:id="@+id/grid_item_img1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/meeting_ico1" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/grid_item_name1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="符合例数"
+        android:textSize="15sp"
+        android:layout_marginBottom="2dp" />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 第一部分 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:id="@+id/img_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/icon_bg_light"/>
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="#BCBCBC"/>
+        <ImageView 
+            android:id="@+id/img_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/icon_bg_air"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#BCBCBC"/>
+    <!-- 第二部分 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView 
+            android:id="@+id/img_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/icon_bg_window"/>
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#BCBCBC"/>
+        <ImageView 
+            android:id="@+id/img_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/icon_bg_annunciator"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#BCBCBC"/>
+    <!-- 第三部分 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView 
+            android:id="@+id/img_5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/icon_bg_model"/>
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:background="#BCBCBC"/>
+        <ImageView 
+            android:id="@+id/img_6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/icon_bg_voice"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

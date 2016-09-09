@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F3F2" >
+
+    <!-- ********title************ -->
+
+    <include
+        android:id="@+id/QD_Head"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        layout="@layout/head_title" />
+    <!-- ********page************ -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/QD_news_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/QD_Title"
+        android:layout_below="@id/QD_Head"
+        android:background="@drawable/main_bg" />
+    <!-- ********card************ -->
+
+    <LinearLayout
+        android:id="@+id/QD_Title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal" >
+
+        <!-- 全局概况 -->
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/touch_bg"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_img1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/main_icon1_1" />
+
+            <TextView
+                android:id="@+id/quality_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="全局概况"
+                android:textColor="#37BCE3" />
+        </LinearLayout>
+        <!-- 室内控制 -->
+
+        <LinearLayout
+            android:id="@+id/LL2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_img2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/main_icon2_2" />
+
+            <TextView
+                android:id="@+id/quality_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="室内控制"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <!-- 辅助办公 -->
+
+        <LinearLayout
+            android:id="@+id/LL3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_img3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/main_icon3_2" />
+
+            <TextView
+                android:id="@+id/quality_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="辅助办公"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <!-- 部门在线 -->
+
+        <LinearLayout
+            android:id="@+id/LL4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/main_img4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/main_icon4_2" />
+
+            <TextView
+                android:id="@+id/quality_tv4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="部门在线"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

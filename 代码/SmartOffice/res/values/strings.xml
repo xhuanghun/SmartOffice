@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartOffice</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_a_">A_Activity</string>
+    <string name="title_activity_light__control_">Light_Control_Activity</string>
+
+</resources>
